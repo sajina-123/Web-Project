@@ -1,0 +1,113 @@
+.crispy-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.crispy-form input[type="text"],
+.crispy-form input[type="email"],
+.crispy-form input[type="password"],
+.crispy-form input[type="number"],
+.crispy-form select,
+.crispy-form textarea {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.375rem;
+    background-color: #ffffff;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.crispy-form textarea {
+    min-height: 200px; 
+}
+
+.crispy-form input[type="text"]:focus,
+.crispy-form input[type="email"]:focus,
+.crispy-form input[type="password"]:focus,
+.crispy-form input[type="number"]:focus,
+.crispy-form select:focus,
+.crispy-form textarea:focus {
+    border-color: #0ea5e9;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(14, 165, 233, 0.25);
+}
+
+.crispy-form .form-text,
+.crispy-form .form-control-feedback {
+    display: block;
+    margin-top: -0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.crispy-form .invalid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: -0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    color: #ef4444;
+}
+
+
+.crispy-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+
+.dark .crispy-form label {
+    color: #e2e8f0;
+}
+
+.dark .crispy-form .form-text,
+.dark .crispy-form .form-control-feedback {
+    color: #94a3b8;
+}
+
+.dark .crispy-form input[type="text"],
+.dark .crispy-form input[type="email"],
+.dark .crispy-form input[type="password"],
+.dark .crispy-form input[type="number"],
+.dark .crispy-form select,
+.dark .crispy-form textarea {
+    background-color: #1a2234;
+    border-color: #334155;
+    color: #e2e8f0;
+}
+
+.dark .crispy-form select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2394a3b8' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+}
+
+.dark .crispy-form input[type="text"]:focus,
+.dark .crispy-form input[type="email"]:focus,
+.dark .crispy-form input[type="password"]:focus,
+.dark .crispy-form input[type="number"]:focus,
+.dark .crispy-form select:focus,
+.dark .crispy-form textarea:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 0.2rem rgba(14, 165, 233, 0.25);
+}
+
+.dark .crispy-form .invalid-feedback {
+    color: #f87171;
+}
+
+
+.asteriskField {
+    color: #ef4444;
+    margin-left: 0.25rem;
+}
+
+.dark .asteriskField {
+    color: #f87171;
+}

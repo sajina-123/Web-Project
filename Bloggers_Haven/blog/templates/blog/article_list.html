@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<h1>Article</h1>
+<ul>
+    {% for article in articles %}
+      <li><a href="{% url 'article_detail' article.pk %}"> {{ article.title }}</a></li>
+    {% empty %}
+       <li>No articles found.</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'article_create' %}">Create New Article</a>
+{% endblock %}

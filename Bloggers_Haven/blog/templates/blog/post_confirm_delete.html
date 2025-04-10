@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <div class="bg-white dark:bg-dark-200 rounded-lg shadow-md dark:shadow-dark-soft p-6 mb-6 transition-colors duration-300">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="mb-6">
+                <h2 class="text-xl font-bold text-secondary-800 dark:text-gray-100 pb-3 border-b border-secondary-200 dark:border-dark-100 mb-4">Delete Blog Post</h2>
+                <p class="text-secondary-700 dark:text-gray-200 text-lg">Are you sure you want to delete the post "{{ object.title }}"?</p>
+            </div>
+            <div class="flex space-x-3 mt-6">
+                <button class="px-4 py-2 bg-red-600 hover:bg-red-700 dark:bg-red-700 dark:hover:bg-red-600 text-white rounded-md transition duration-300" type="submit">Yes, Delete</button>
+                <a class="px-4 py-2 border border-secondary-300 dark:border-secondary-600 text-secondary-700 dark:text-gray-300 hover:bg-secondary-100 dark:hover:bg-dark-100 rounded-md transition duration-300" href="{% url 'post-detail' object.id %}">Cancel</a>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

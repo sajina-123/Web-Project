@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.dropdown-animation {
+    transition: all 0.3s ease;
+    transform-origin: top;
+}
+
+.theme-toggle-icon {
+    transition: all 0.3s ease;
+}
+
+.dark .theme-toggle-icon.sun {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+}
+
+.dark .theme-toggle-icon.moon {
+    opacity: 0;
+    transform: rotate(90deg) scale(0);
+}
+
+.theme-toggle-icon.sun {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0);
+    position: absolute;
+}
+
+.theme-toggle-icon.moon {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+}
+
+/* Ensure text is readable in dark mode */
+.dark {
+    color-scheme: dark;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark p, .dark span, 
+.dark a:not(.text-primary-400):not(.text-primary-300), .dark div {
+    color: #e2e8f0;
+}
+
+.dark .text-secondary-700, .dark .text-secondary-800, .dark .text-secondary-900 {
+    color: #f1f5f9 !important;
+}
